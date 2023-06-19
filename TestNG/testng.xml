@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="Insurance.DogInsurance">
+		  <methods>
+			  <exclude name="mobile.*"></exclude>
+		  </methods>
+      </class>
+	  <class name="Insurance.LifeInsurance"/>
+      <class name="Insurance.VehicleInsurance"/>
+      <class name="Insurance.HomeInsurance"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
